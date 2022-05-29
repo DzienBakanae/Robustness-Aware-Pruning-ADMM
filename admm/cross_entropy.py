@@ -4,7 +4,7 @@ import torch.nn.functional as F
 ''' Modify from https://github.com/jadore801120/attention-is-all-you-need-pytorch/blob/20f355eb655bad40195ae302b9d8036716be9a23/train.py#L33 '''
 
 class CrossEntropyLossMaybeSmooth(nn.CrossEntropyLoss):
-    ''' Calculate cross entropy loss, apply label smoothing if needed. '''
+    ''' Calculate cross entropy loss, apply label smoothing if needed. test '''
 
     def __init__(self, smooth_eps=0.0):
         super(CrossEntropyLossMaybeSmooth, self).__init__()
